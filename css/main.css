@@ -9,7 +9,7 @@ body{
 .logo_img{
     width: 300px;
     cursor: pointer;
-
+    
 }
 
 .top{
@@ -31,19 +31,9 @@ body{
     margin-right: 10px;
 }
 
-ul{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none; 
+#login:hover, #signup:hover{
+    color: rgb(194, 197, 196);
 }
-
-li{
-    margin-top: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition-duration: 0.5s;
-}
-
 .menubar{
     margin-top: 30px;
     width: 100%;
@@ -51,13 +41,46 @@ li{
     font-weight: bold;
     color: rgb(94, 93, 92);
 }
+.menuul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none; 
+}
 
-li:hover{
+.menuli{
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+.menuli:hover{
     color: rgb(194, 197, 196);
 }
 
-#login:hover, #signup:hover{
-    color: rgb(194, 197, 196);
+.dropdown-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menuli:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item{
+    font-size: 15px;
+    transition-duration: 0.5s;
+    color: rgb(94, 93, 92);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.dropdown-item:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 163, 255);
 }
 
 .title{
@@ -71,6 +94,7 @@ li:hover{
     margin-top: 20px;
 }
 .d-block{
+    width: 100%;
     height: 600px;
 }
 
@@ -83,6 +107,7 @@ li:hover{
     width: 300px;
     height: 300px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .row{
@@ -99,4 +124,24 @@ li:hover{
 
 .btn:hover{
     background: rgb(211, 211, 211);
+}
+
+.col-md{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    background: lightgray;
+    width: 97%;
+    height: 97%;
+    opacity: 0;
+    transition: all 1.5s;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.overlay:hover{
+    opacity: 0.5;
 }
