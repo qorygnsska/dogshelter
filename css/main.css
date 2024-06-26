@@ -3,6 +3,19 @@ body{
     padding: 0;
 }
 
+.container {
+    width: 100%;
+    max-width: 1000px; /* 최대 너비 설정 */
+}
+
+.title{
+    position: absolute;
+    left: 45%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
 .logo{
     text-align: center;
 }
@@ -87,14 +100,6 @@ body{
     background-color: rgb(50, 163, 255);
 }
 
-.title{
-    position: absolute;
-    left: 45%;
-    font-weight: bold;
-    font-size: 20px;
-    
-}
-
 .carousel{
     margin-top: 20px;
 }
@@ -104,15 +109,22 @@ body{
     height: 600px;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* 버튼의 너비 */
+    top: 50%; /* 세로 정렬을 위한 위치 조정 */
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
+}
+
 .content{
     margin-top: 150px;
     text-align: center;
 }
 
 .dogimg, .dailyimg, .reviewimg{
-    width: 300px;
-    height: 300px;
-    padding: 10px;
+    width: 100%; /* 이미지 너비 100%로 설정 */
+    height: 230px; /* 비율 유지를 위해 자동 높이 설정 */
+    max-width: 230px; /* 최대 너비 설정 */
+    margin-bottom: 3px; /* 아래 여백 추가 */
     cursor: pointer;
 }
 
@@ -161,6 +173,11 @@ body{
     text-align: center;
 }
 
+.dogrow, .dailyrow , .reviewrow{
+    display: flex; 
+    justify-content: space-between;
+}
+
 .photo{
     margin-top: 150px;
     text-align: center;
@@ -168,16 +185,14 @@ body{
 
 .photorow{
     display: flex;
-    
+    justify-content: space-between;
 }
 
 .photoimg{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
-.a{
-    margin: 0;
-    padding: 0;
-}
