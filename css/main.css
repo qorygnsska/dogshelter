@@ -149,16 +149,12 @@ body{
     text-align: center;
 }
 
-.dogimg, .dailyimg, .reviewimg{
+.dogimg, .placeimg, .dailyimg, .reviewimg{
     width: 100%; /* 이미지 너비 100%로 설정 */
     height: 230px; /* 비율 유지를 위해 자동 높이 설정 */
     max-width: 230px; /* 최대 너비 설정 */
     margin-bottom: 3px; /* 아래 여백 추가 */
     cursor: pointer;
-}
-
-.row{
-    margin-bottom: 10px;
 }
 
 .btn{
@@ -177,10 +173,6 @@ body{
     border: solid 1px white;
 }
 
-.col-md{
-    position: relative;
-}
-
 .overlay{
     position: absolute;
     background: lightgray;
@@ -195,6 +187,11 @@ body{
 
 .overlay:hover{
     opacity: 0.5;
+}
+
+.daily{
+    margin-top: 150px;
+    text-align: center;
 }
 
 .review{
